@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --grey-color: #DBDBDB;
+    --gray-color: #f5f5f5;
+}
+
+*{
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Quicksand', 'sans-serif';
+    line-height: 1.6rem;
+    box-sizing: border-box;
+    background-color: var(--background-color-1);
+}
+html{
+    font-size: 62.5%;
+}
+
+dl, ol, ul {
+    margin-bottom: 0;
+}
+
+
+
+.btn--primary{
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+    color: var(--text-color-2);
+    font-size: 1.6rem;
+    font-weight: 700;
+    padding: 10px 50px;
+    cursor: pointer;
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes grow{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+@import "./layout.scss";
+@import "./home.scss";
+@import "./product.scss";
+@import "./carousel.scss";
+@import "./auth.scss";
+@import "./cart.scss";
